@@ -1,0 +1,240 @@
+<html>
+
+<head>
+    <title>Case Study</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+</head>
+
+<body>
+    <center>
+        <div id="header" class="btn btn-success header_div">
+            <h3>Case study between Google Lens and MobileNet</h3>
+            <img src="Logo gl.jpeg" id="logo">
+            &nbsp; VS &nbsp;
+            <button class="btn btn-light style">MobileNet</button>
+        </div>
+        <br>
+        <br> 
+         
+
+        <div id="1" class="test col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <img src="Books.png" class="img_responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output On Google Lens -
+                <span id="result">Half Leather Boots</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output On MobileNet - 
+                <span id="result">Comic Book</span>
+            </h5>
+
+            <p>Result - </p>
+            <span id="acc">MobileNet is more accurate</span>
+            <p id="result"></p>
+
+        </div>
+        <br>
+        <br>
+        <hr>
+
+
+            <div id="2" class="test col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <img src="Cup.png" class="img_responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On Google Lens - 
+                    <span id="result">Serveware</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On MobileNet - 
+                    <span id="result">Coffee Cup</span>
+                </h5>
+
+                <p>Result - </p>
+                <span id="acc">MobileNet is more accurate</span>
+                <p id="result"></p>
+
+            </div>
+            <br>
+            <br>
+            <hr>
+
+            <div id="3" class="test col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <img src="Ink bottle.png" class="img_responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On Google Lens - 
+                    <span id="result">Jeans</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On MobileNet - 
+                    <span id="result">Water Bottle</span>
+                </h5>
+
+                <p>Result - </p>
+                <span id="acc">MobileNet is more accurate</span>
+                <p id="result"></p>
+
+            </div>
+            <br>
+            <br>
+            <hr>
+
+            <div id="4" class="test col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <img src="Laptop.png" class="img_responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On Google Lens - 
+                    <span id="result">Space Bar</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On MobileNet - 
+                    <span id="result">Laptop</span>
+                </h5>
+
+                <p>Result - </p>
+                <span id="acc">MobileNet is more accurate</span>
+
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="5" class="test col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <img src="Mask.png" class="img_responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On Google Lens
+                    <span id="result">Solid</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On MobileNet
+                    <span id="result">Ski Mask</span>
+                </h5>
+
+                <p>Result - </p>
+                <span id="acc">MobileNet is more accurate</span>
+
+            </div>
+            <br>
+            <br>
+            <hr>
+
+            <div id="6" class="test col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <img src="Mobile.png" class="img_responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On Google Lens - 
+                    <span id="result">Building blocks</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On MobileNet - 
+                    <span id="result">Guitar</span>
+                </h5>
+
+                <p>Result - </p>
+                <span id="acc">Google Lens is more accurate</span>
+
+            </div>
+            <br>
+            <br>
+<hr>
+
+            <div id="7" class="test col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <img src="Mouse.png" class="img_responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On Google Lens - 
+                    <span id="result">Solid</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On MobileNet - 
+                    <span id="result">Mouse</span>
+                </h5>
+
+                <p>Result - </p>
+                <span id="acc">MobileNet is more accurate</span>
+
+            </div>
+            <br>
+            <br>
+            <hr>
+
+            <div id="8" class="test col-xs-12">
+
+                <li class="col-sm-4 col-xs-12">
+                    <img src="Scissors.jpg" class="img_responsive">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On Google Lens - 
+                    <span id="result">Household Hardware</span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output On MobileNet - 
+                    <span id="result">Curtain</span>
+                </h5>
+                <p>Result - </p>
+                <span id="acc">Google Lens is more accurate</span>
+            </div>
+            <br>
+            <br>
+            <hr>
+
+        </ol>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <p class="btn btn-success" id="Fr">I have tested 8 images - <br> Google Lens had predicted 2 images accurately. <br> Mobile Net has predicted 6 images accurately. </p>
+
+        </div>
+       <br><br><br><br><br>
+        <div id="footer">
+        Developed by Neeharika 
+        </div>
+
+
+    </center>
+</body>
+
+</html>
